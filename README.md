@@ -11,6 +11,7 @@ sourced from the [SysML v2 VS Code extension][grammar-src].
 | File | Purpose |
 | --- | --- |
 | `slides.md` | The slide deck itself (Markdown + [Marp front-matter][marp-docs]). |
+| `transformation.md` | *SysML v1 → v2: A clean-room transformation & utilization toolchain* — 20-slide INCOSE/OMG webinar deck over the [uml2py](https://github.com/mycr0ft/uml2py) + [sysmlpy](https://github.com/mycr0ft/sysmlpy) toolchain. Build with `npx marp transformation.md --engine ./engine.js --html -o transformation.html`. |
 | `engine.js` | A custom Marp CLI engine that swaps Marp's default highlight.js for [Shiki][shiki] and registers the SysML v2 grammar. |
 | `sysml.tmLanguage.json` | The TextMate grammar that defines SysML v2 tokenization. Pulled from [daltskin/VSCode_SysML_Extension][grammar-src] (MIT). |
 | `package.json` | npm scripts and dependencies ([Marp CLI][marp-cli], [Marp Core][marp-core], [Shiki][shiki]). |
